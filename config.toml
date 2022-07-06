@@ -1,4 +1,4 @@
-baseURL = "https://jaxlifu.github.io/blogs/"
+baseURL = "https://jaxlifu.github.io/blog/"
 title = "Jax lifu blog"
 
 enableRobotsTXT = true
