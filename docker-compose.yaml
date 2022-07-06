@@ -1,0 +1,19 @@
+version: '3.9'
+
+services:
+  hugo:
+    image: klakegg/hugo:ext-alpine
+    volumes:
+      - .:/src
+    working_dir: /src/
+    command: server -D
+    ports:
+      - 1313:1313
+
+  node:
+    image: node:alpine
+    volumes:
+      - .:/src
+    working_dir: /src/themes/docsy/
+    depends_on:
+      - hugo
